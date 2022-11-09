@@ -6,7 +6,7 @@ import { Button } from "./component/button";
 
 function App() {
   return (
-    <div>
+    <div className="container app">
       <Button />
     </div>
   );
