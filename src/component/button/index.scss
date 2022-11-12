@@ -1,0 +1,53 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100px;
+  color: #dfedee;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+
+  &.green {
+    .backSide {
+      background-color: #287A72;
+    }
+
+    .frontSide {
+      background-color: #31A094;
+    }
+  }
+
+  &.red {
+    .backSide {
+      background-color: #C52134;
+    }
+
+    .frontSide {
+      background-color: #DF3F4F;
+    }
+  }
+
+  .backSide, .frontSide {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+  }
+
+  .frontSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3px;
+    transition: bottom 0.05s;
+  }
+
+  &:active {
+    .frontSide {
+      bottom: 0;
+    }
+  }
+}
