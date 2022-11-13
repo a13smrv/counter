@@ -7,7 +7,14 @@ import { Button } from "./component/button";
 function App() {
   return (
     <div className="container app">
-      <Button />
+      <div className="counterValue">
+        <h1 className="title">Counter</h1>
+        <p className="value">1</p>
+      </div>
+      <div className="buttonPanel">
+        <Button />
+        <Button />
+      </div>
     </div>
   );
 }
