@@ -12,8 +12,8 @@ function App() {
         <p className="value">1</p>
       </div>
       <div className="buttonPanel">
-        <Button />
-        <Button />
+        <Button type="green" text="Plus" />
+        <Button type="red" text="Minus" />
       </div>
     </div>
   );
