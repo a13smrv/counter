@@ -1,12 +1,12 @@
 import React from "react";
 import "./index.scss";
 
-export function Button() {
+export function Button(props) {
   return (
-    <div className="button green">
+    <div className={`button ${props.type}`} onClick={props.onClick}>
       <div className="backSide">
         <div className="frontSide">
-          Plus
+          {props.text}
         </div>
       </div>
     </div>

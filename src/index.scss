@@ -1,6 +1,37 @@
+@import-normalize;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .container.app {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  .counterValue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 24px;
+      margin: 0 0 15px;
+    }
+
+    .value {
+      margin: 0;
+      font-size: 60px;
+    }
+  }
+
+  .buttonPanel {
+    display: flex;
+    gap: 15px;
+  }
 }
